@@ -1,5 +1,12 @@
 # Trasync
 Projeto 5 periodo
+### caso nao tenham python baixado:
+
+sudo apt-get install python3
+
+sudo apt-get install python3-pip
+
+sudo apt-get install python3-tk
 
 ### instalando dependencias
 pip install pandas==1.5.3
