@@ -1,7 +1,7 @@
 # Trasync
 Projeto 5 periodo
 
-###instalando dependencias
+### instalando dependencias
 pip install pandas==1.5.3
 pip install numpy
 pip install requests
