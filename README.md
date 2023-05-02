@@ -25,3 +25,10 @@ pip install lxml
 
 pip install tabulate
 
+### como rodar:
+
+abra no terminal o diretório PET-Petaho
+
+cd rafatieppo-lucylattes-163c86e
+
+python3 lucyLattes.py
