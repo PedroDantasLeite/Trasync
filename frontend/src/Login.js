@@ -1,5 +1,6 @@
 import login from "./login.png";
 import trasync from "./trasync.png";
+import google from "./google.png"
 import "./Login.css";
 function Login() {
   return (
@@ -18,22 +19,24 @@ function Login() {
         <img className="img-login" src={login} alt="login"></img>
         <div className="info-div">
           <img className="h-min margin-auto" src={trasync} alt="trasync"></img>
-          <h1 className="text-center font-roboto mt-4">Login</h1>
-          <button className="block margin-auto rounded border border-gray mt-4">
-            Entrar com google
+          <h1 className="text-center font-roboto mt-4 login-title">Login</h1>
+          <button className="block margin-auto mt-4 google-button">
+            <img src={google}></img>
+            <div>Entrar com o google</div>
+            
           </button>
           <h1 className="text-center mt-4">Ou</h1>
           <div>
             <input
-              className="margin-auto w-max h-8 mt-6 block rounded-sm"
+              className="input-login"
               placeholder="E-mail"
             ></input>
             <input
-              className="margin-auto mt-4 h-8 block rounded-sm"
+              className="margin-auto  block input-login"
               placeholder="Senha"
             ></input>
           </div>
-          <div className="mt-4">Esqueceu sua senha?</div>
+          <div className="mt-4 forgot" >Esqueceu sua senha?</div>
           <div>
             <button className="mt-6 login-button">Login</button>
           </div>
