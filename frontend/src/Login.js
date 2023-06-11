@@ -14,23 +14,28 @@ function Login() {
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@500&family=Roboto:wght@500&display=swap"
         rel="stylesheet"
       ></link>
-      <div className="flex">
-        <img className="w-1/2" src={login} alt="login"></img>
-        <div>
-          <img className="h-min" src={trasync} alt="trasync"></img>
-          <h1>Login</h1>
-          <button className="rounded border border-gray-">
+      <div className="flex justify-between">
+        <img className="img-login" src={login} alt="login"></img>
+        <div className="info-div">
+          <img className="h-min margin-auto" src={trasync} alt="trasync"></img>
+          <h1 className="text-center font-roboto mt-4">Login</h1>
+          <button className="block margin-auto rounded border border-gray mt-4">
             Entrar com google
           </button>
+          <h1 className="text-center mt-4">Ou</h1>
           <div>
-            <div>
-              <input placeholder="usuario"></input>
-            </div>
-            <input placeholder="senha"></input>
+            <input
+              className="margin-auto w-max h-8 mt-6 block rounded-sm"
+              placeholder="E-mail"
+            ></input>
+            <input
+              className="margin-auto mt-4 h-8 block rounded-sm"
+              placeholder="Senha"
+            ></input>
           </div>
-          esqueceu sua senha?
+          <div className="mt-4">Esqueceu sua senha?</div>
           <div>
-            <button className="login-button">Login</button>
+            <button className="mt-6 login-button">Login</button>
           </div>
         </div>
       </div>
