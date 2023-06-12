@@ -1,15 +1,14 @@
 import login from "./assets/login.png";
 import trasync from "./assets/trasync.png";
-import google from "./assets/google.png"
+import google from "./assets/google.png";
 import "./Login.css";
-import {useNavigate} from 'react-router';
+import { useNavigate } from "react-router";
 
 function Login() {
-
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/dashboard');
+    navigate("/dashboard");
   };
 
   return (
@@ -29,28 +28,26 @@ function Login() {
         <div className="info-div">
           <img className="h-min margin-auto" src={trasync} alt="trasync"></img>
           <h1 className="text-center font-roboto mt-4 login-title">Login</h1>
-          <button onClick={handleClick} className="block margin-auto mt-4 google-button">
+          <button
+            onClick={handleClick}
+            className=" flex margin-auto mt-4 google-button"
+          >
             <img src={google} width={24}></img>
             <div>Entrar com o google</div>
-            
           </button>
           <h1 className="text-center mt-4">Ou</h1>
           <div>
-            <input
-              className="input-login"
-              placeholder="E-mail"
-            ></input>
+            <input className="input-login" placeholder="E-mail"></input>
             <input
               className="margin-auto  block input-login"
               placeholder="Senha"
             ></input>
           </div>
-          <div className="mt-4 forgot" >Esqueceu sua senha?</div>
+          <div className="mt-4 forgot">Esqueceu sua senha?</div>
           <div>
             <button onClick={handleClick} className="mt-6 login-button">
               Login
             </button>
-            
           </div>
         </div>
       </div>
