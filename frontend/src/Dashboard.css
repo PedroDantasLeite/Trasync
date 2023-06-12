@@ -1,3 +1,49 @@
+header {
+    background: #FCFCFC;
+    width: 100%;
+    height: 82px;
+    position: absolute;
+    box-shadow: 4px 4px 8px rgba(69, 69, 69, 0.05);
+}
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    top: calc(50% - 36px/2);
+
+    position: absolute;
+    width: 225px;
+    height: 41px;
+    right: 80px;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 16px;
+    gap: 16px;
+
+    position: absolute;
+    width: 159px;
+    height: 36px;
+    left: 32px;
+    top: calc(50% - 36px/2);
+
+    
+}
 t1 {
-    color: blue;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+}
+.email {
+    font-weight: 400;
+    font-size: 12px;
+    color: #5A5A5A;
 }
