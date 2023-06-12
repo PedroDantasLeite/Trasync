@@ -29,8 +29,8 @@ function Login() {
         <div className="info-div">
           <img className="h-min margin-auto" src={trasync} alt="trasync"></img>
           <h1 className="text-center font-roboto mt-4 login-title">Login</h1>
-          <button className="block margin-auto mt-4 google-button">
-            <img src={google}></img>
+          <button onClick={handleClick} className="block margin-auto mt-4 google-button">
+            <img src={google} width={24}></img>
             <div>Entrar com o google</div>
             
           </button>
