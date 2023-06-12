@@ -1,8 +1,17 @@
-import login from "./login.png";
-import trasync from "./trasync.png";
-import google from "./google.png"
+import login from "./assets/login.png";
+import trasync from "./assets/trasync.png";
+import google from "./assets/google.png"
 import "./Login.css";
+import {useNavigate} from 'react-router';
+
 function Login() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/dashboard');
+  };
+
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -38,7 +47,10 @@ function Login() {
           </div>
           <div className="mt-4 forgot" >Esqueceu sua senha?</div>
           <div>
-            <button className="mt-6 login-button">Login</button>
+            <button onClick={handleClick} className="mt-6 login-button">
+              Login
+            </button>
+            
           </div>
         </div>
       </div>
