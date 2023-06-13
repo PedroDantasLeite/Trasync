@@ -1,12 +1,15 @@
 .header-direita {
     background: #FCFCFC;
     width: 100%;
-    height: 82px;
+    height: 80px;
     box-shadow: 4px 4px 10px rgba(69, 69, 69, 0.05);
 }
 
 .header-esquerda {
-background-color: white;}
+    background: #FCFCFC;
+    box-shadow: 4px 4px 8px rgba(69, 69, 69, 0.05);
+    height: 100vh;
+}
 
 .perfil {
     display: flex;
@@ -29,9 +32,8 @@ background-color: white;}
 
     width: 159px;
     height: 36px;
-    left: 32px;
     top: calc(50% - 36px/2);
-
+    padding-left: 40px;
     
 }
 t1 {
@@ -54,7 +56,116 @@ t1 {
     margin-bottom: auto;
 }
 
-.quadradinhos {
-    box-shadow: 2px 2px 2px rgba(69, 69, 69, 0.05);
+.quadrado {
+    box-shadow: 4px 4px 12px rgba(96, 96, 96, 0.05);
+    background-color: #FCFCFC;
+    margin-left: 9vh;
+    width: 25vh;
+    height: 13vh;
+    margin-top: 10px;
+}
+.sair {
+    margin-top: 62vh;
+}
 
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.search  {
+
+    width: 487px;
+    height: 48px;
+
+    padding-left: 20px;
+    border: 2px solid #E9E9E9;
+    border-radius: 8px;
+    border-color: #C8C8C8;
+    color: black;
+}
+.button-relatorio {
+    
+    width: 226px;
+    height: 48px;
+
+    border: 2px solid #2A2C67;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    gap: 24px;
+}
+
+.body {
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(69, 69, 69, 0.05);
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.container-graph {
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+    background-color: #FCFCFC;
+}
+.title-graph {
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.image {
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.graph {
+    width: 100%;
+}
+
+.title-box {
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+.number {
+    font-weight: 600;
+    font-size: 34px;
+}
+.cima {
+    color: #168F32;
+    font-weight: 600;
+    font-size: 20px;
+}
+.baixo {
+    color: #F53D5D;
+    font-weight: 600;
+    font-size: 20px;
+}
+.textin {
+    font-weight: 400;
+    font-size: 12px;
+    color: #5A5A5A;
+}
+.porcentagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
 }

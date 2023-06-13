@@ -7,7 +7,12 @@ import relatorios from "./assets/relatorios.png";
 import artigos from "./assets/artigos.png";
 import configuracoes from "./assets/configurações.png";
 import info from "./assets/info.png";
-
+import exit from "./assets/exit.png"
+import upload from "./assets/upload.png"
+import graph from "./assets/Line chart.png"
+import frame from "./assets/Frame 3069.png"
+import cima from './assets/cima.png'
+import baixo from './assets/baixo.png'
 function Dashboard() {
   return (
     <>
@@ -40,9 +45,9 @@ function Dashboard() {
               Configurações
             </div>
           </button>
-          <button className="h-14 w-60 gap-2 pt-80">
+          <button className="sair">
             <div className=" flex gap-4">
-              <img className="h-min w-auto ml-2" src={dashboard} />
+              <img className="h-min w-auto ml-2" src={exit} />
               Sair
             </div>
           </button>
@@ -61,26 +66,82 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="m-4">
-            <div className="flex gap-2">
-              <div className="quadradinhos rounded-md bg-gray-100 w-48 h-32">
-                <div className="flex justify-between">
-                  Artigos publicados
-                  <img src={info} className="w h-min"></img>
+          <div className="body">
+            <div className="inputs">
+                <input className="search divider"
+                  placeholder="Buscar por"
+                />
+                <button className="button-relatorio">
+                  Gerar relatório
+                  <img src={upload}></img>
+                </button>
+            </div>
+            <div className="m-4">
+              <div className="flex gap-12">
+                <div className="quadrado rounded-md">
+                  <div className="title-box">
+                    Artigos publicados
+                    <img src={info}></img>
+                  </div>
+                  <div className="number">
+                    22
+                  </div>
+                  <div className="porcentagem">
+                    <img src={cima}></img>
+                    <p className="textin"><span className="cima">+3%</span> do mês anterior</p>
+                  </div>
                 </div>
-                22
-                <div className="flex"></div>
+                <div className="quadrado rounded-md">
+                  <div className="title-box">
+                    Prêmios recebidos
+                    <img src={info} className=""></img>
+                  </div>
+                  <div className="number">
+                    04
+                  </div>
+                  <div className="porcentagem">
+                    <img src={baixo}></img>
+                    <p className="textin"><span className="baixo">-5%</span> do mês anterior</p>
+                  </div>
+                </div>
+                <div className="quadrado rounded-md">
+                  <div className="title-box">
+                    Orientações
+                    <img src={info} className=""></img>
+                  </div>
+                  <div className="number">
+                    11
+                  </div>
+                  <div className="porcentagem">
+                    <img src={cima}></img>
+                    <p className="textin"><span className="cima">+6%</span> do mês anterior</p>
+                  </div>
+                </div>
+                <div className="quadrado rounded-md">
+                  <div className="title-box">
+                    Cursos
+                    <img src={info} className=""></img>
+                  </div>
+                  <div className="number">
+                    19
+                  </div>
+                  <div className="porcentagem">
+                    <img src={baixo}></img>
+                    <p className="textin"><span className="baixo">-9%</span> do mês anterior</p>
+                  </div>
+                </div>
               </div>
+
+              <div className="container-graph">
+
+                <h4 className="title-graph">Produções X Tempo</h4>
+                <img src={graph} className="graph"></img>
+                <img src={frame} className="image"></img>
+              </div>
+              <div className="border w-full mt-4"></div>
             </div>
-            <div className="w-auto mt-4 h-40 border p-3">
-              Produções X Tempo
-              <img></img>
-            </div>
-            <div className="flex gap-4 mt-4">
-              <div className="border h-60 w-80 p-3">asd</div>
-            </div>
-            <div className="border w-full mt-4"></div>
           </div>
+          
         </div>
       </div>
     </>
