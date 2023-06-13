@@ -32,3 +32,13 @@ abra no terminal o diretório PET-Petaho
 cd rafatieppo-lucylattes-163c86e
 
 python3 lucyLattes.py
+
+### Como rodar projeto frontend:
+
+verifique que tem o node.js instalado
+
+entre no diretorio ./frontend
+
+npm start
+
+abra sua aba em localhost:3000
